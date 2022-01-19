@@ -461,17 +461,6 @@ display: none;
   font-size: 13px;
 }
 
-#fc .DropBtn {
-  margin-top:15px;
-  margin-bottom:5px;
-  border: 1px solid #cfcfcf;
-  padding: 5px 0px 5px 0px;
-  border-radius: 5px;
-  text-align: center;
-  width: 24%;
-  font-size: 13px;
-}
-
 #fc .activeBtn {
   background-color: #535353;
   color: white;
