@@ -441,6 +441,15 @@ display: none;
   box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
+#fc .backButtonDiv {
+  border: 1px solid #cfcfcf;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  font-size:14px;
+}
+
 #fc .driverDiv {
   border: 1px solid #cfcfcf;
   padding: 5px;
