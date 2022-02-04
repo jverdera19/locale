@@ -35529,7 +35529,7 @@ figcaption {
     border-radius: 3px;
 }
 
-.delivery-date-button:focus {
+.delivery-date-button.active {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -35554,9 +35554,17 @@ figcaption {
 
 .delivery-date-text-picked {
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color: #5a5a5a;
   font-size: 14px;
 }
+
+.delivery-date-text-picked.active {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 14px;
+  }
+
+
 
 .shelf-life-container {
   display: -webkit-box;
@@ -50338,7 +50346,7 @@ figcaption {
 
   /* testing two-state button */
  /* The switch - the box around the slider */
-.switch {
+.switchTest {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -50346,7 +50354,7 @@ figcaption {
   }
   
   /* Hide default HTML checkbox */
-  .switch input {
+  .switchTest input {
     opacity: 0;
     width: 0;
     height: 0;
