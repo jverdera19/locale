@@ -35780,6 +35780,39 @@ Site Switcher Styles
     cursor: pointer;
 }
 
+.div-block-350 {
+    width: 100px;
+    height: 100px;
+    background-image: url("https://assets-global.website-files.com/616f8bb3983e5a829b4a092d/6206f1e73eb08552f00f8d1f_Asset%2051.png");
+    background-position: 0px 0px;
+    background-size: contain;
+}
+
+.disclaimer-font {
+    max-width: none;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: Raleway, sans-serif;
+    color: #9e9e9e;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.product-name-copy {
+    max-width: none;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: Raleway, sans-serif;
+    color: #4e4e4e;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* End of site switcher */
 
 
