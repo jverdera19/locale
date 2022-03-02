@@ -35509,48 +35509,48 @@ figcaption {
 }
 
 .delivery-date-button {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 47%;
-    height: 40px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #e4e4e4;
-    border-radius: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 47%;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4;
+  border-radius: 3px;
 }
 
 .delivery-date-button.active {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 47%;
-    height: 40px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #fa8f68;
-    border-radius: 3px;
-    background-color: #fa8f68;
-    color: #dddee2;
-  }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 47%;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fa8f68;
+  border-radius: 3px;
+  background-color: #fa8f68;
+  color: #dddee2;
+}
 
 .delivery-date-text-picked {
   font-family: 'Open Sans', sans-serif;
@@ -35559,10 +35559,24 @@ figcaption {
 }
 
 .delivery-date-text-picked.active {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 14px;
-  }
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+.cleared-cart-item {
+  max-width: none;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  font-family: Raleway, sans-serif;
+  color: #4e4e4e;
+  font-size: 14px;
+  line-height: 22px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+}
 
 /*
 Site Switcher Styles
@@ -50682,6 +50696,18 @@ Site Switcher Styles
     justify-content: center;
     border-style: solid;
     border-radius: 3px;
+  }
+
+  .delivery-date-text {
+    max-width: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Raleway, sans-serif;
+    color: #4e4e4e;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
   }
 
   .delivery-date-text-picked {
