@@ -35475,6 +35475,21 @@ figcaption {
   justify-content: space-between;
 }
 
+.div-block-delivery-date {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .text-block-169 {
   font-family: 'Open Sans', sans-serif;
   color: #5a5a5a;
@@ -50614,6 +50629,14 @@ Site Switcher Styles
   }
 
   .div-block-347 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .div-block-delivery-date {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
