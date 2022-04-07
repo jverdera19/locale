@@ -35824,7 +35824,7 @@ Site Switcher Styles
 .div-block-350 {
     width: 100px;
     height: 100px;
-    background-image: url("https://assets-global.website-files.com/616f8bb3983e5a829b4a092d/6206f1e73eb08552f00f8d1f_Asset%2051.png");
+    background-image: url("https://assets-global.website-files.com/616f8bb3983e5a829b4a092d/6206f1e73eb08552f00f8d1f_Asset%2051.png") !important;
     background-position: 0px 0px;
     background-size: contain;
 }
