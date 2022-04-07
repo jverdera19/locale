@@ -35712,7 +35712,7 @@ Site Switcher Styles
     margin-top: 0px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-    -ms-flex-pack: center;
+    -ms-flex-pack: center; 
     justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -35824,7 +35824,7 @@ Site Switcher Styles
 .div-block-3500 {
     width: 100px;
     height: 100px;
-    background-image: url("https://assets-global.website-files.com/616f8bb3983e5a829b4a092d/6206f1e73eb08552f00f8d1f_Asset%2051.png") 
+    background-image: url("https://assets-global.website-files.com/616f8bb3983e5a829b4a092d/6206f1e73eb08552f00f8d1f_Asset%2051.png"); 
     background-position: 0px 0px;
     background-size: contain;
 }
