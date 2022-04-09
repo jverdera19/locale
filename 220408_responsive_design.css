@@ -14022,7 +14022,7 @@ figcaption {
   text-transform: uppercase;
 }
 
-.tip-text-block {
+#fc .tip-text-block {
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
   color: #4e4e4e;
