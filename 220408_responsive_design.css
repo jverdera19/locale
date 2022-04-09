@@ -14023,7 +14023,7 @@ figcaption {
 }
 
 .tip-text-block {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   font-family: 'Open Sans', sans-serif;
   color: #4e4e4e;
   font-size: 14px;
