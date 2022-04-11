@@ -1,8 +1,9 @@
 $(document).ready(function () {
 
     // Init state, show tuesday, hide saturday
+    // MARK: Need to refactor to handle Fri & Saturday
     $(".product-content-tuesday").show();
-    $(".product-content-saturday").hide();
+    $(`.product-content-${friOrSat}`).hide();
 
     // Check for previously chosen day
     if (!localStorage.getItem("day")) {
@@ -30,10 +31,11 @@ $(document).ready(function () {
     $(".btn[data-day='" + chosenDay + "']").addClass("active");
     if (chosenDay == "tuesday") {
         $(".product-tuesday-content").show();
-        $(".product-saturday-content").hide();
+        $(`.product-content-${friOrSat}`).hide();
+    // MARK: Need to refactor to handle Fri & Saturday
     } else if (chosenDay == ('friday' || 'saturday')) {
         $(".product-tuesday-content").hide();
-        $(".product-saturday-content").show();
+        $(`.product-content-${friOrSat}`).show();
     }
 
     // Choose day
@@ -50,24 +52,24 @@ $(document).ready(function () {
                 chosenDateFC = deliveryDate;
                 chosenDate = deliveryDate;
                 $(".product-tuesday-content").show();
-                $(".product-saturday-content").hide();
+                $(`.product-content-${friOrSat}`).hide();
             } else if (day == ('friday' || 'saturday')) {
                 chosenDateFC = deliveryDate2;
                 chosenDate = deliveryDate2;
                 $(".product-tuesday-content").hide();
-                $(".product-saturday-content").show();
+                $(`.product-content-${friOrSat}`).show();
             }
         } else {
             if (day == ('friday' || 'saturday')) {
                 chosenDateFC = deliveryDate;
                 chosenDate = deliveryDate;
                 $(".product-tuesday-content").hide();
-                $(".product-saturday-content").show();
+                $(`.product-content-${friOrSat}`).show();
             } else if (day == "tuesday") {
                 chosenDateFC = deliveryDate2;
                 chosenDate = deliveryDate2;
                 $(".product-tuesday-content").show();
-                $(".product-saturday-content").hide();
+                $(`.product-content-${friOrSat}`).hide();
             }
         }
 
