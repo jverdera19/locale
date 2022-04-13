@@ -86,5 +86,7 @@ $(document).ready(function () {
     // Set delivery date buttons text
     document.getElementById("deliveryDate").text = deliveryDate;
     document.getElementById("deliveryDate2").text = deliveryDate2;
+    document.getElementById("deliveryDate").dataset.day = firstDay;
+    document.getElementById("deliveryDate2").dataset.day = secondDay;
     console.log("completed setting up button text: ", deliveryDate, deliveryDate2);
 });
