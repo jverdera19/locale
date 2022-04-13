@@ -88,5 +88,5 @@ $(document).ready(function () {
     document.getElementById("deliveryDate2").text = deliveryDate2;
     document.getElementById("deliveryDate").dataset.day = firstDay;
     document.getElementById("deliveryDate2").dataset.day = secondDay;
-    console.log("completed setting up button text: ", deliveryDate, deliveryDate2);
+    console.log("completed setting up button text: ", deliveryDate, deliveryDate2, firstDay, secondDay);
 });
