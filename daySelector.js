@@ -1,15 +1,9 @@
 $(document).ready(function () {
 
     // Init state, show tuesday, hide saturday
+    // MARK: Need to refactor to handle Fri & Saturday
     $(".product-content-tuesday").show();
-    $(".product-content-saturday").hide();
-
-    // Set delivery date order
-    if (deliveryDate.includes("Tuesday")) {
-        firstDay = "tuesday";
-    } else {
-        firstDay = "saturday";
-    }
+    $(`.product-content-${friOrSat}`).hide();
 
     // Check for previously chosen day
     if (!localStorage.getItem("day")) {
@@ -23,11 +17,11 @@ $(document).ready(function () {
     if (firstDay == "tuesday") {
         if (chosenDay == "tuesday") {
             chosenDateFC = deliveryDate;
-        } else if (chosenDay == "saturday") {
+        } else if (chosenDay == ('friday' || 'saturday')) {
             chosenDateFC = deliveryDate2;
         }
     } else {
-        if (chosenDay == "saturday") {
+        if (chosenDay == ('friday' || 'saturday')) {
             chosenDateFC = deliveryDate;
         } else if (chosenDay == "tuesday") {
             chosenDateFC = deliveryDate2;
@@ -37,10 +31,11 @@ $(document).ready(function () {
     $(".btn[data-day='" + chosenDay + "']").addClass("active");
     if (chosenDay == "tuesday") {
         $(".product-tuesday-content").show();
-        $(".product-saturday-content").hide();
-    } else if (chosenDay == "saturday") {
+        $(`.product-content-${friOrSat}`).hide();
+    // MARK: Need to refactor to handle Fri & Saturday
+    } else if (chosenDay == ('friday' || 'saturday')) {
         $(".product-tuesday-content").hide();
-        $(".product-saturday-content").show();
+        $(`.product-content-${friOrSat}`).show();
     }
 
     // Choose day
@@ -57,24 +52,24 @@ $(document).ready(function () {
                 chosenDateFC = deliveryDate;
                 chosenDate = deliveryDate;
                 $(".product-tuesday-content").show();
-                $(".product-saturday-content").hide();
-            } else if (day == "saturday") {
+                $(`.product-content-${friOrSat}`).hide();
+            } else if (day == ('friday' || 'saturday')) {
                 chosenDateFC = deliveryDate2;
                 chosenDate = deliveryDate2;
                 $(".product-tuesday-content").hide();
-                $(".product-saturday-content").show();
+                $(`.product-content-${friOrSat}`).show();
             }
         } else {
-            if (day == "saturday") {
+            if (day == ('friday' || 'saturday')) {
                 chosenDateFC = deliveryDate;
                 chosenDate = deliveryDate;
                 $(".product-tuesday-content").hide();
-                $(".product-saturday-content").show();
+                $(`.product-content-${friOrSat}`).show();
             } else if (day == "tuesday") {
                 chosenDateFC = deliveryDate2;
                 chosenDate = deliveryDate2;
                 $(".product-tuesday-content").show();
-                $(".product-saturday-content").hide();
+                $(`.product-content-${friOrSat}`).hide();
             }
         }
 
@@ -91,5 +86,7 @@ $(document).ready(function () {
     // Set delivery date buttons text
     document.getElementById("deliveryDate").text = deliveryDate;
     document.getElementById("deliveryDate2").text = deliveryDate2;
-    console.log("completed setting up button text: ", deliveryDate, deliveryDate2);
+    document.getElementById("deliveryDate").dataset.day = firstDay;
+    document.getElementById("deliveryDate2").dataset.day = secondDay;
+    console.log("completed setting up button text: ", deliveryDate, deliveryDate2, firstDay, secondDay);
 });
