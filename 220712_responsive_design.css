@@ -14022,6 +14022,15 @@ figcaption {
   text-transform: uppercase;
 }
 
+.tip-text-block {
+  margin-bottom: 20px !important;
+  font-family: 'Open Sans', sans-serif;
+  color: #4e4e4e;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+}
+
 .div-block-119 {
   position: static;
   left: auto;
